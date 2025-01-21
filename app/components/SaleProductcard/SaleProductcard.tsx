@@ -7,6 +7,8 @@ interface NotSaleProductProps {
 }
 
 export default function NotSaleProduct({ product }: NotSaleProductProps) {
+
+
   return (
     <div className="flex flex-col w-full">
       
@@ -38,10 +40,9 @@ export default function NotSaleProduct({ product }: NotSaleProductProps) {
           </div>
 
           
-          <button className="hover:bg-[#029FAE] rounded-lg p-2">
-            <Image src="/images/cart.png" alt="Add to cart" width={20} height={20} />
-          </button>
+          
         </span>
+        
       </div>
     </div>
   );

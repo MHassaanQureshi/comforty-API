@@ -9,7 +9,7 @@ export default function Explore({ imageUrl }: ExploreProps) {
     <h1 className="text-xl uppercase font-extrabold md:mb-10 items-center">
           EXPLORE NEW AND POPULAR STYLES
         </h1>
-      <div className="flex flex-col md:flex-row md:gap-4">
+      <div className="flex flex-col gap-4 md:flex-row md:gap-4">
       <div className="w-full flex flex-col items-center  md:h-[80%] ">
         
         <div className="w-full flex  ">

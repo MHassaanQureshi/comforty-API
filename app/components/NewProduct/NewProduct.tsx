@@ -1,12 +1,15 @@
 import { Product } from "@/types/product";
 import Image from "next/image";
 import Link from "next/link";
+
 interface Props {
   product: Product; 
   customWidth?: number; 
   customHeight?: number; }
 
+  
 export default function NotSaleProduct({ product, customWidth = 250, customHeight = 100 }: Props) {
+  
   return (
     <div className="flex flex-col w-full">
      
@@ -36,9 +39,7 @@ export default function NotSaleProduct({ product, customWidth = 250, customHeigh
           
           <span className="text-lg font-semibold">${product.price}</span>
           
-          <span className="hover:bg-[#029FAE] rounded-lg p-2 cursor-pointer">
-            <Image src="/images/cart.png" alt="Add to cart" width={20} height={20} />
-          </span>
+          
         </span>
       </div>
       

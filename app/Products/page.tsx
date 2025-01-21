@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { client } from "@/sanity/lib/client";
 import { Product } from "@/types/product";
 import Image from "next/image";
@@ -24,6 +25,7 @@ const getProducts = async () => {
 };
 
 export default async function Products() {
+  
   const products = await getProducts();
 
   return (
@@ -37,7 +39,7 @@ export default async function Products() {
               <span className="absolute bg-[#F5813F] p-1 text-white ml-2 mt-4 text-sm rounded-lg">
                 Sale
               </span>
-              {/* Product Image */}
+            
               <Link href={`/product/${product._id}`}>
               <Image
                 src={product.image_url}
@@ -49,26 +51,26 @@ export default async function Products() {
               </Link>
             </div>
 
-            {/* Product Details */}
+           
             <div className="flex flex-col mt-2">
               <h1 className="font-bold text-lg">{product.title}</h1>
               <span className="flex justify-between p-2 items-center">
-                {/* Price Section */}
+              
                 <div className="flex gap-2 items-center">
                   <p className="text-lg font-semibold">${product.price}</p>
                   <p className="line-through text-[#9A9CAA] text-sm">
                     ${product.priceWithoutDiscount}
                   </p>
                 </div>
-                {/* Add to Cart Button */}
-                <button className="hover:bg-[#029FAE] rounded-lg p-2">
+                
+                {/* <button className="hover:bg-[#029FAE] rounded-lg p-2" onClick={() => addToCart(product)}>
                   <Image
                     src="/images/cart.png"
                     alt="Add to cart"
                     width={20}
                     height={20}
                   />
-                </button>
+                </button> */}
               </span>
             </div>
           </div>
