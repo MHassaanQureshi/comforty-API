@@ -49,7 +49,7 @@ This step brought the visual and interactive elements of the website to life.
 ---
 
 ### Day 5: **Error Handling and Performance Testing**
-Day five was dedicated to ensuring the website’s functionality and reliability. Teams focused on:  
+Day five was dedicated to ensuring the website’s functionality and reliability. focused on:  
 - Identifying and resolving any bugs or errors in the code.  
 - Testing API responses and handling edge cases to prevent application crashes.  
 - Optimizing performance by implementing techniques such as lazy loading, caching, and code splitting.  
