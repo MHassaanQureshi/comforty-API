@@ -25,12 +25,12 @@ export default function Footer(){
                 <div>
                     <h1 className="text-2xl text-[##272343] opacity-40 font-bold">Category</h1>
                     <ul className="">
-                        <li><Link href=""  className="hover:underline hover:text-[#007580]">Sofa</Link></li>
-                        <li><Link href=""className="hover:underline hover:text-[#007580]">Arm Chair</Link></li>
-                        <li><Link href="" className="hover:underline hover:text-[#007580]">Wing Chair</Link></li>
-                        <li><Link href="" className="hover:underline hover:text-[#007580]">Desk Chair</Link></li>
-                        <li><Link href="" className="hover:underline hover:text-[#007580]">wooden Chair</Link></li>
-                        <li><Link href="" className="hover:underline hover:text-[#007580]">Park Bench</Link></li>
+                        <li><Link href="/Products"  className="hover:underline hover:text-[#007580]">Sofa</Link></li>
+                        <li><Link href="/Products"className="hover:underline hover:text-[#007580]">Arm Chair</Link></li>
+                        <li><Link href="/Products" className="hover:underline hover:text-[#007580]">Wing Chair</Link></li>
+                        <li><Link href="/Products" className="hover:underline hover:text-[#007580]">Desk Chair</Link></li>
+                        <li><Link href="/Products" className="hover:underline hover:text-[#007580]">wooden Chair</Link></li>
+                        <li><Link href="/Products" className="hover:underline hover:text-[#007580]">Park Bench</Link></li>
                     </ul>
                 </div>
                 <div>

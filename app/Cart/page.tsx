@@ -9,12 +9,12 @@ export default function CartPage() {
   const { cart, removeFromCart, clearCart, updateCart } = useCart();
   const router = useRouter();
 
-  // State for showing notifications
+  
   const [notification, setNotification] = useState("");
 
   const showNotification = (message: string) => {
     setNotification(message);
-    setTimeout(() => setNotification(""), 3000); // Clear notification after 3 seconds
+    setTimeout(() => setNotification(""), 3000); 
   };
 
   const subtotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);

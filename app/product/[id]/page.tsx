@@ -20,6 +20,7 @@ async function fetchProduct(id: string): Promise<Product | null> {
         title,
         description,
         price,
+        inventory,
         "image_url": image.asset->url
       }`,
       { productId: id } 

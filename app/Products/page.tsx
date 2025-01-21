@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/rules-of-hooks */
+
 import { client } from "@/sanity/lib/client";
 import { Product } from "@/types/product";
 import Image from "next/image";
@@ -61,6 +61,7 @@ export default async function Products() {
                   <p className="line-through text-[#9A9CAA] text-sm">
                     ${product.priceWithoutDiscount}
                   </p>
+                 
                 </div>
                 
                 {/* <button className="hover:bg-[#029FAE] rounded-lg p-2" onClick={() => addToCart(product)}>
@@ -77,7 +78,7 @@ export default async function Products() {
         ))}
       </div>
       <div className="w-full flex items-baseline bg-[#1E2832] bg-opacity-10">
-        <Newsletter />
+        <Newsletter/>
       </div>
     </div>
   );

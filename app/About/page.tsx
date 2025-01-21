@@ -1,6 +1,6 @@
 import AboutDiff from "../components/AboutDiff/AboutDiff";
 import AboutHero from "../components/AboutHero/AboutHero";
-
+import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { Product } from "@/types/product"; 
 import Image from "next/image";
@@ -19,6 +19,7 @@ const getProducts = async () => {
 
 export default async function About() {
   const products = await getProducts();
+  const selectedProducts = products.slice(0, 5);
 
   return (
     <>
@@ -54,10 +55,12 @@ export default async function About() {
       <div className="w-full flex flex-col p-2 mt-20 md:mt-32">
         <h1 className="text-2xl font-bold p-2">Featured Products</h1>
         <div className="w-full flex flex-col items-center mt-5 gap-4 md:flex-row md:justify-center md:gap-10">
-          {products.map((product: Product) => (
-           <div key={product._id}>
+          {selectedProducts.map((product: Product) => (
+            <Link href={`/product/${product._id}`} key={product._id}>
+           <div >
              <Image src={product.image_url} width={400} height={100} alt={product.title} />
            </div>
+           </Link>
           ))}
         </div>
       </div>
